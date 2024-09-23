@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /* Box Level */
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /* Box Level sem short hande */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            --------------------------
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            --------------------------
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* Box Level sem short hande */
+
+            padding: 10px;
+            --------------------------
+            margin: 10px;
+            --------------------------
+            outline: 5px dashed salmon;
+        }
+
+        a{ /* Inline-Level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 1    0px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .o{
+            border: 10px solid blue;
+            padding: 20px 20px 20px 20px;
+        }
+
+        h2{
+            height: 200px;
+            width: 200px;
+            border: 20px solid red;
+            margin: 100px auto 100px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplo de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <p class="o">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quidem voluptatem quo perspiciatis obcaecati ut ipsum aperiam voluptas laboriosam nesciunt asperiores sit nostrum recusandae quas porro, nisi, doloribus illum itaque!</p>
+    <h2>Lorem</h2>
+</body>
+</html>
